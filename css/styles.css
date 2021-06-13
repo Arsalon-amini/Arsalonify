@@ -6,3 +6,52 @@
     --color-headings: #1b0760;
     --color-body: #918ca4;
 }
+
+html {
+    font-size: 62.5%; /* 62.5% of 16px = 10px */
+}
+
+body {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: var(--color-body); 
+    font-size: 2.4rem; /* 24px */
+    line-height: 1.5; /* 1.5 x font size = 24px x 1.5 = 36px */
+}
+
+h1, h2, h3 {
+    color: var(--color-headings); 
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 7rem; /* 1rem = 1 x font size of HTML element (10px) = 70px */
+}
+
+h2 {
+    font-size: 4rem; /* 40px */
+}
+    
+h3 {
+    font-size: 3rem; /* 30px  */
+}
+
+p {
+    margin-top: 0; /* allow heading to set margin*/
+}
+
+/* desktop version */
+@media screen and (min-width: 1024px){
+    body {
+        font-size: 1.8rem; /* 18px */
+    }
+
+    h1{
+        font-size: 8rem; /* 80px */
+    }
+    h2 {
+        font-size: 4rem; /* 40px */
+    }
+    h3 {
+        font-size: 2.4rem; /* 24px */
+    }
+}
