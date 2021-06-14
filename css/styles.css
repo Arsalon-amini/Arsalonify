@@ -1,4 +1,5 @@
 
+/* colors */
 :root {
     --color-primary: #2584ff; 
     --color-secondary: #00d9ff;
@@ -7,39 +8,33 @@
     --color-body: #918ca4;
 }
 
+/* Typography */
 html {
     font-size: 62.5%; /* 62.5% of 16px = 10px */
 }
-
 body {
     font-family: Inter, Arial, Helvetica, sans-serif;
     color: var(--color-body); 
     font-size: 2.4rem; /* 24px */
     line-height: 1.5; /* 1.5 x font size = 24px x 1.5 = 36px */
 }
-
 h1, h2, h3 {
     color: var(--color-headings); 
     margin-bottom: 1rem;
 }
-
 h1 {
     font-size: 7rem; /* 1rem = 1 x font size of HTML element (10px) = 70px */
 }
-
 h2 {
     font-size: 4rem; /* 40px */
-}
-    
+}  
 h3 {
     font-size: 3rem; /* 30px  */
 }
-
 p {
     margin-top: 0; /* allow heading to set margin*/
 }
-
-/* desktop version */
+/* responsive fonts */
 @media screen and (min-width: 1024px){
     body {
         font-size: 1.8rem; /* 18px */
@@ -53,5 +48,32 @@ p {
     }
     h3 {
         font-size: 2.4rem; /* 24px */
+    }
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+.link-arrow {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.link-arrow::after {
+    content: '-->';
+    margin-left: 5px;
+    transition: margin .15s; /* property transitioning, duration */
+}
+
+.link-arrow:hover::after {
+    margin-left: 10px;
+}
+
+@media screen and (min-width:1024px) {
+    .link-arrow {
+        font-size: 1.5rem;
     }
 }
