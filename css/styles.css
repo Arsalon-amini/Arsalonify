@@ -8,6 +8,10 @@
     --color-body: #918ca4;
 }
 
+*, *::after, *::before {
+    box-sizing: border-box; 
+}
+
 /* Typography */
 html {
     font-size: 62.5%; /* 62.5% of 16px = 10px */
@@ -163,4 +167,74 @@ a {
     display: inline-flex;
     justify-content: center; /* align on primary axis (default horizontal axis)*/
     align-items: center;  /* align on secondary axis (default vertical axis)*/
+}
+
+
+/* Buttons */
+
+/* structure */
+.btn {
+    border-radius: 40px;
+    border: 0;
+    color: var(--color-primary);
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0; /* space between btn and other elements (horizontal, vertical) */
+    padding: 2rem 3rem; /* vertical padd, horizontal pad*/
+    text-align: center; 
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  /* skins  */
+  .btn--primary {
+    background: linear-gradient(121deg, var(--color-primary), 55.5%,var(--color-secondary)); 
+    color:#fff; 
+  }
+
+  .btn--primary:hover {
+      background: var(--color-primary) ; /* lighten(primary, 10%) = SAAS compiler will turn into an actual hex value */
+  }
+
+  .btn--secondary {
+    background:  linear-gradient(121deg, var(--color-secondary), 55.5%,var(--color-primary)); ; 
+    color:#fff; 
+}
+
+.btn--secondary:hover {
+    background: #00c8eb ; /* lighten(secondary, 10%) = SAAS compiler will turn into an actual hex value */
+}
+
+
+.btn--accent {
+    background: linear-gradient(121deg,var(--color-accent), 55.5%,  #fea974); 
+    color:#fff; 
+}
+
+.btn--accent:hover {
+    background: #ec3000; 
+}
+
+.btn--block {
+    width: 100%;
+    display: inline-block;
+}
+
+.btn--outline {
+    background: #fff;
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings); 
+}
+
+.btn--outline:hover{
+    background: var(--color-headings); 
+    color: #fff; 
+}
+
+@media screen and (min-width: 1024px){
+    .btn {
+        font-size: 1.5rem;
+    }
+    
 }
