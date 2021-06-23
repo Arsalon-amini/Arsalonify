@@ -359,3 +359,26 @@ a {
         font-size: 1.6rem;
     }
 }
+
+/* Media objects */
+
+.media {
+    display: flex;
+    margin: 2rem;
+}
+
+.media__title{
+    color: white;
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.media__body {
+    margin: 0 2rem;
+    font-size: 2rem;
+}
+
+.media__image {
+    margin-top: 1rem;
+}
