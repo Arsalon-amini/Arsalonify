@@ -12,34 +12,97 @@
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body style="padding: 6rem">
-    <div class="collapsible collapsible--expanded">
-      <header class="collapsible__header">
-        <h2 class="collapsible__heading">Item 1</h2>
-          <svg class="icon icon--white collapsible__chevron">
-            <use xlink:href="images/sprite.svg#chevron"></use>
-          </svg>
-      </header>
-      <div class="collapsible__content">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis nulla
-        harum dolore, facilis voluptates consectetur aspernatur quos commodi
-        assumenda laboriosam?
-      </div>
-    </div>
+  <body>
 
-    <div class="collapsible collapsible--expanded">
-      <header class="collapsible__header">
-        <h2 class="collapsible__heading">Item 1</h2>
-          <svg class="icon icon--white collapsible__chevron">
-            <use xlink:href="images/sprite.svg#chevron"></use>
-          </svg>
+    <section class="block container">
+        <header class="block__header">
+          <h2 class="block__heading"> Hello World </h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat iste
+            nemo accusantium temporibus dolor quaerat aut obcaecati dolores
+            excepturi corporis!
+          </p>
+        </header>
+          <div class="grid grid--1x2">
+            <div class="plan" style="margin: 10px">
+              <div class="card card--secondary">
+                <header class="card__header">
+                  <h3 class="plan__name"> Entry </h3>
+                  <span class="plan__price">$14</span>
+                  <span class="plan__billing-cycle">/month</span>
+                  <span class="badge badge--secondary badge--small">10% off</span>
+                  <span class="plan__description">Easy start on the cloud</span>
+                </header>
+                <div class="card__body">
+                  <ul class="list list--tick">
+                    <li class="list__item">Unlimited Websites</li>
+                    <li class="list__item">Unlimited Bandwidth</li>
+                    <li class="list__item">100GB SSD Storage</li>
+                    <li class="list__item">3 GB RAM</li>
+                  </ul>
+                  <button class="btn btn--outline btn--block">Buy Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="plan" style="margin: 10px">
+              <div class="card card--secondary">
+                <header class="card__header">
+                  <h3 class="plan__name"> Entry </h3>
+                  <span class="plan__price">$14</span>
+                  <span class="plan__billing-cycle">/month</span>
+                  <span class="badge badge--secondary badge--small">10% off</span>
+                  <span class="plan__description">Easy start on the cloud</span>
+                </header>
+                <div class="card__body">
+                  <ul class="list list--tick">
+                    <li class="list__item">Unlimited Websites</li>
+                    <li class="list__item">Unlimited Bandwidth</li>
+                    <li class="list__item">100GB SSD Storage</li>
+                    <li class="list__item">3 GB RAM</li>
+                  </ul>
+                  <button class="btn btn--outline btn--block">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          
+          
+      </section>
+    
+    <section class="block block--dark block--skewed-left">
+      <header class="block__header">
+        <h2 class="block__heading"> Hello World </h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat iste
+          nemo accusantium temporibus dolor quaerat aut obcaecati dolores
+          excepturi corporis!
+        </p>
       </header>
-      <div class="collapsible__content">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis nulla
-        harum dolore, facilis voluptates consectetur aspernatur quos commodi
-        assumenda laboriosam?
+      <div class="container">
+        <div class="plan" style="margin: 10px">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name"> Entry </h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% off</span>
+              <span class="plan__description">Easy start on the cloud</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100GB SSD Storage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <script src="js/main.js"></script>
+    </section>
+
+    </section>
+
   </body>
 </html>
