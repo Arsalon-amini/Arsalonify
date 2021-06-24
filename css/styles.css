@@ -249,6 +249,11 @@ a {
     color: #fff; 
 }
 
+.btn--stretched {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
 @media screen and (min-width: 1024px){
     .btn {
         font-size: 1.5rem;
@@ -491,5 +496,56 @@ a {
 
     .testimonial .quote {
         margin-left: 6rem ;
+    }
+}
+
+/* Callout */
+
+.callout {
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.callout--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.callout__heading {
+    color: #fff;
+    margin-top: 0;
+    font-size: 4rem;
+}
+
+/* 
+.grid {
+    display: grid;
+    justify-items: stretch; //default value for aligning items horizontally in grid (primary axis)
+    align-items: stretch: //default value for vertical alignment in grid (secondary axis)
+}
+
+*/
+
+.callout .btn {
+    justify-self: center; /*horizontal placement w/in grid section- property applied to grid item NOT grid itself*/
+    align-self: center /* vertical placement w/in grid section - property applied to grid item NOT grid itself*/
+}
+
+.callout__content {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr auto; /* auto - makes col wide enough to fit content (button) extra space in col 2 allocated to first column */
+    }
+
+    .callout__content {
+        text-align: left;
+    }
+
+    .callout .btn {
+        justify-self: start;
+        margin: 0 2rem;
     }
 }
