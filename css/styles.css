@@ -569,7 +569,10 @@ a {
 }
 
 .collapsible__content {
-    display: none; /* hides content during collapsed state*/
+    max-height: 0; /* hides content during collapsed state*/
+    overflow: hidden; 
+    opacity: 0; /* creates fade out effect */
+    transition: all 0.3s; /* all keyword animates multiple properties (opacity and max-height) */
 }
 
 .collapsible--expanded .collapsible__chevron {
@@ -577,5 +580,6 @@ a {
 }
 
 .collapsible--expanded .collapsible__content {
-    display: block; 
+    max-height: 100vh; /* won't stretch more than it's content vs. height property */
+    opacity: 1; 
 } 
