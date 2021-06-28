@@ -199,10 +199,20 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     margin: 1rem 0; /* space between btn and other elements (horizontal, vertical) */
+    outline: 0;
     padding: 2rem 3rem; /* vertical padd, horizontal pad*/
     text-align: center; 
     text-transform: uppercase;
     white-space: nowrap;
+  }
+
+
+ /* button w/ icon */
+  .btn .icon {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 1rem;
+      vertical-align: middle;
   }
 
   /* skins  */
@@ -286,7 +296,7 @@ a {
 .input-group .input {
     border: 0;
     flex-grow: 1; /* input is a flex item - set it to grow to take all available space, bcuz div is block level, pushes button to right */
-    padding: 1.5rem 1rem; /* reduces padding between input and inline buttons /icons */
+    padding: 1.5rem 2rem; /* reduces padding between input and inline buttons /icons */
 }
 
 .input-group .btn {
@@ -713,5 +723,31 @@ a {
     .hero__content{
         text-align: left; 
         align-self: center;
+    }
+}
+
+/* Domain */
+
+.block-domain .input-group {
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem auto; /* 4rem vertical auto horizontal*/
+    max-width: 700px; 
+}
+
+.block-domain__prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns each has 1 slice*/
+    grid-template-rows: repeat(2, 6rem); /* 6rem sets height of each row*/
+    font-size: 2rem;
+    font-weight: 600;
+    justify-items: center; /* flex align content along horizontal axis */
+    max-width: 700px;
+    margin: 0 auto; /* 0 horizontal auto for vertial (automatically scale)*/
+}
+
+@media screen and (min-width: 768px){
+    .block-domain__prices {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /* auto-fit: will make as many columns as content items | minMax will set col width size*/
     }
 }
